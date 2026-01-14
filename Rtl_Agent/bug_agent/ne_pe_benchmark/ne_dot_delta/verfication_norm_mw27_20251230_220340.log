@@ -1,0 +1,72 @@
+2025-12-30 22:03:40: Running command: ../../hw-cbmc/hw-cbmc  cmodel/ne_fp_ffp_norm_mw27.c rtl/DW_lsd_w26.v rtl/ne_fp_sfl_blk_w27s5.v rtl/ne_fp_ffp_norm_mw27.v  --module ne_fp_ffp_norm_mw27 --bound 1
+2025-12-30 22:03:40: Starting verification...
+HW-CBMC version 5.4
+Parsing cmodel/ne_fp_ffp_norm_mw27.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Parsing rtl/DW_lsd_w26.v
+Parsing rtl/ne_fp_sfl_blk_w27s5.v
+Parsing rtl/ne_fp_ffp_norm_mw27.v
+Converting
+Type-checking Verilog::DW_lsd_w26
+Making Verilog::DW_lsd_w26.dec a wire
+Making Verilog::DW_lsd_w26.enc a wire
+Type-checking Verilog::ne_fp_sfl_blk_w27s5
+Type-checking Verilog::ne_fp_ffp_norm_mw27
+Type-checking ne_fp_ffp_norm_mw27
+Mapping variables
+mapping `ne_fp_ffp_norm_mw27.a' to `Verilog::ne_fp_ffp_norm_mw27.a'
+mapping `ne_fp_ffp_norm_mw27.z' to `Verilog::ne_fp_ffp_norm_mw27.z'
+mapping `ne_fp_ffp_norm_mw27.mode' to `Verilog::ne_fp_ffp_norm_mw27.mode'
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Unwinding loop c_DW_lsd_w26.0 iteration 1 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 2 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 3 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 4 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 5 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 6 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 7 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 8 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 9 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 10 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 11 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 12 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 13 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 14 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 15 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 16 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 17 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 18 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 19 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 20 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 21 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 22 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 23 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 24 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+Unwinding loop c_DW_lsd_w26.0 iteration 25 file cmodel/ne_fp_ffp_norm_mw27.c line 32 function c_DW_lsd_w26 thread 0
+size of program expression: 626 steps
+simple slicing removed 3 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::ne_fp_ffp_norm_mw27 with 2 time frames
+General constraints
+Initial state
+Transition relation
+Transition 0->1
+Transition 1
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+13130 variables, 26483 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.04s
+VERIFICATION SUCCESSFUL
+2025-12-30 22:03:40: Verification completed

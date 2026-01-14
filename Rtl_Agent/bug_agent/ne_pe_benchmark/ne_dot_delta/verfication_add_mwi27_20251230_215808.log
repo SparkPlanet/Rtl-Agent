@@ -1,0 +1,44 @@
+2025-12-30 21:58:08: Running command: ../../hw-cbmc/hw-cbmc  cmodel/ne_fp_ffp_add_mwi27.c  rtl/DW01_add_w30.v  rtl/ne_fp_ffp_add_mwi27.v --module ne_fp_ffp_add_mwi27 --bound 1
+2025-12-30 21:58:08: Starting verification...
+HW-CBMC version 5.4
+Parsing cmodel/ne_fp_ffp_add_mwi27.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Parsing rtl/DW01_add_w30.v
+Parsing rtl/ne_fp_ffp_add_mwi27.v
+Converting
+Type-checking Verilog::DW01_add_w30
+Type-checking Verilog::ne_fp_ffp_add_mwi27
+Type-checking ne_fp_ffp_add_mwi27
+Mapping variables
+mapping `ne_fp_ffp_add_mwi27.a' to `Verilog::ne_fp_ffp_add_mwi27.a'
+mapping `ne_fp_ffp_add_mwi27.b' to `Verilog::ne_fp_ffp_add_mwi27.b'
+mapping `ne_fp_ffp_add_mwi27.mode' to `Verilog::ne_fp_ffp_add_mwi27.mode'
+mapping `ne_fp_ffp_add_mwi27.z' to `Verilog::ne_fp_ffp_add_mwi27.z'
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+size of program expression: 381 steps
+simple slicing removed 10 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::ne_fp_ffp_add_mwi27 with 2 time frames
+General constraints
+Initial state
+Transition relation
+Transition 0->1
+Transition 1
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+8741 variables, 13571 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.199s
+VERIFICATION SUCCESSFUL
+2025-12-30 21:58:09: Verification completed

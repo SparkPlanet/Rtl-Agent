@@ -1,0 +1,62 @@
+2025-12-30 22:03:35: Running command: ../../hw-cbmc/hw-cbmc cmodel/ne_fp_ffp_mul.c --module ne_fp_ffp_mul rtl/DW02_mult_i8.v rtl/DW02_mult_i11.v rtl/ne_fp_ffp_mul.v --bound 1
+2025-12-30 22:03:35: Starting verification...
+HW-CBMC version 5.4
+Parsing cmodel/ne_fp_ffp_mul.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Parsing rtl/DW02_mult_i8.v
+Parsing rtl/DW02_mult_i11.v
+Parsing rtl/ne_fp_ffp_mul.v
+Converting
+Type-checking Verilog::DW02_mult_i11
+Type-checking Verilog::DW02_mult_i8
+Type-checking Verilog::ne_fp_ffp_mul
+Type-checking ne_fp_ffp_mul
+Mapping variables
+mapping `ne_fp_ffp_mul.op_mode' to `Verilog::ne_fp_ffp_mul.op_mode'
+mapping `ne_fp_ffp_mul.i_gp_zero_skip_en' to `Verilog::ne_fp_ffp_mul.i_gp_zero_skip_en'
+mapping `ne_fp_ffp_mul.a' to `Verilog::ne_fp_ffp_mul.a'
+mapping `ne_fp_ffp_mul.b' to `Verilog::ne_fp_ffp_mul.b'
+mapping `ne_fp_ffp_mul.z0_e' to `Verilog::ne_fp_ffp_mul.z0_e'
+mapping `ne_fp_ffp_mul.z1_e' to `Verilog::ne_fp_ffp_mul.z1_e'
+mapping `ne_fp_ffp_mul.z_m' to `Verilog::ne_fp_ffp_mul.z_m'
+mapping `ne_fp_ffp_mul.op_mode_1r' to `Verilog::ne_fp_ffp_mul.op_mode_1r'
+mapping `ne_fp_ffp_mul.mul_a_1_1r' to `Verilog::ne_fp_ffp_mul.mul_a_1_1r'
+mapping `ne_fp_ffp_mul.mul_b_1_1r' to `Verilog::ne_fp_ffp_mul.mul_b_1_1r'
+mapping `ne_fp_ffp_mul.mul_a_0_1r' to `Verilog::ne_fp_ffp_mul.mul_a_0_1r'
+mapping `ne_fp_ffp_mul.mul_b_0_1r' to `Verilog::ne_fp_ffp_mul.mul_b_0_1r'
+mapping `ne_fp_ffp_mul.mul_z1' to `Verilog::ne_fp_ffp_mul.mul_z1'
+mapping `ne_fp_ffp_mul.mul_z0' to `Verilog::ne_fp_ffp_mul.mul_z0'
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Unwinding loop c_ne_fp_ffp_mul.0 iteration 1 file cmodel/ne_fp_ffp_mul.c line 123 function c_ne_fp_ffp_mul thread 0
+Unwinding loop c_ne_fp_ffp_mul.0 iteration 2 file cmodel/ne_fp_ffp_mul.c line 123 function c_ne_fp_ffp_mul thread 0
+Unwinding loop c_ne_fp_ffp_mul.1 iteration 1 file cmodel/ne_fp_ffp_mul.c line 218 function c_ne_fp_ffp_mul thread 0
+Unwinding loop c_ne_fp_ffp_mul.1 iteration 2 file cmodel/ne_fp_ffp_mul.c line 218 function c_ne_fp_ffp_mul thread 0
+Unwinding loop c_ne_fp_ffp_mul.1 iteration 3 file cmodel/ne_fp_ffp_mul.c line 218 function c_ne_fp_ffp_mul thread 0
+Unwinding loop c_ne_fp_ffp_mul.1 iteration 4 file cmodel/ne_fp_ffp_mul.c line 218 function c_ne_fp_ffp_mul thread 0
+size of program expression: 1418 steps
+simple slicing removed 11 assignments
+Generated 3 VCC(s), 3 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::ne_fp_ffp_mul with 2 time frames
+General constraints
+Initial state
+Transition relation
+Transition 0->1
+Transition 1
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+14989 variables, 43348 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 4.647s
+VERIFICATION SUCCESSFUL
+2025-12-30 22:03:40: Verification completed

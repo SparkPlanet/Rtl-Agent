@@ -1,0 +1,269 @@
+2025-12-30 22:03:29: Starting verification...
+HW-CBMC version 5.4
+Parsing cmodel/ne_fp_ffp_e_align.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Parsing rtl/ne_fp_ffp_e_align.v
+Parsing rtl/DW_minmax_w6n4.v
+Parsing rtl/DW_minmax_w6n5.v
+Parsing rtl/DW_minmax_w9n4.v
+Parsing rtl/DW_minmax_w9n5.v
+Converting
+Type-checking Verilog::DW_minmax_w6n4
+Making Verilog::DW_minmax_w6n4.max_signed.a_x a wire
+Making Verilog::DW_minmax_w6n4.index a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.a a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.value a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.index a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.a_v a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.value_v a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.index_v a wire
+Making Verilog::DW_minmax_w6n4.min_unsigned.a_x a wire
+Making Verilog::DW_minmax_w6n4.min_signed.a a wire
+Making Verilog::DW_minmax_w6n4.min_signed.value a wire
+Making Verilog::DW_minmax_w6n4.min_signed.index a wire
+Making Verilog::DW_minmax_w6n4.min_signed.a_v a wire
+Making Verilog::DW_minmax_w6n4.min_signed.value_v a wire
+Making Verilog::DW_minmax_w6n4.min_signed.index_v a wire
+Making Verilog::DW_minmax_w6n4.min_signed.a_x a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.a a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.value a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.index a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.a_v a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.value_v a wire
+Making Verilog::DW_minmax_w6n4.value a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.index_v a wire
+Making Verilog::DW_minmax_w6n4.max_unsigned.a_x a wire
+Making Verilog::DW_minmax_w6n4.max_signed.a a wire
+Making Verilog::DW_minmax_w6n4.max_signed.value a wire
+Making Verilog::DW_minmax_w6n4.max_signed.index a wire
+Making Verilog::DW_minmax_w6n4.max_signed.a_v a wire
+Making Verilog::DW_minmax_w6n4.max_signed.value_v a wire
+Making Verilog::DW_minmax_w6n4.max_signed.index_v a wire
+Type-checking Verilog::DW_minmax_w6n5
+Making Verilog::DW_minmax_w6n5.min_signed.a a wire
+Making Verilog::DW_minmax_w6n5.min_signed.value a wire
+Making Verilog::DW_minmax_w6n5.min_signed.index a wire
+Making Verilog::DW_minmax_w6n5.min_signed.a_v a wire
+Making Verilog::DW_minmax_w6n5.min_signed.value_v a wire
+Making Verilog::DW_minmax_w6n5.min_signed.index_v a wire
+Making Verilog::DW_minmax_w6n5.min_signed.a_x a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.a a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.value a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.index a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.a_v a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.value_v a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.index_v a wire
+Making Verilog::DW_minmax_w6n5.max_unsigned.a_x a wire
+Making Verilog::DW_minmax_w6n5.max_signed.a a wire
+Making Verilog::DW_minmax_w6n5.max_signed.value a wire
+Making Verilog::DW_minmax_w6n5.max_signed.index a wire
+Making Verilog::DW_minmax_w6n5.max_signed.a_v a wire
+Making Verilog::DW_minmax_w6n5.max_signed.value_v a wire
+Making Verilog::DW_minmax_w6n5.max_signed.index_v a wire
+Making Verilog::DW_minmax_w6n5.max_signed.a_x a wire
+Making Verilog::DW_minmax_w6n5.value a wire
+Making Verilog::DW_minmax_w6n5.index a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.a a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.value a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.index a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.a_v a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.value_v a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.index_v a wire
+Making Verilog::DW_minmax_w6n5.min_unsigned.a_x a wire
+Type-checking Verilog::DW_minmax_w9n4
+Making Verilog::DW_minmax_w9n4.max_signed.a_x a wire
+Making Verilog::DW_minmax_w9n4.value a wire
+Making Verilog::DW_minmax_w9n4.index a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.a a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.value a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.index a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.a_v a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.value_v a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.index_v a wire
+Making Verilog::DW_minmax_w9n4.min_unsigned.a_x a wire
+Making Verilog::DW_minmax_w9n4.min_signed.a a wire
+Making Verilog::DW_minmax_w9n4.min_signed.value a wire
+Making Verilog::DW_minmax_w9n4.min_signed.index a wire
+Making Verilog::DW_minmax_w9n4.min_signed.a_v a wire
+Making Verilog::DW_minmax_w9n4.min_signed.value_v a wire
+Making Verilog::DW_minmax_w9n4.min_signed.index_v a wire
+Making Verilog::DW_minmax_w9n4.min_signed.a_x a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.a a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.value a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.index a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.a_v a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.value_v a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.index_v a wire
+Making Verilog::DW_minmax_w9n4.max_unsigned.a_x a wire
+Making Verilog::DW_minmax_w9n4.max_signed.a a wire
+Making Verilog::DW_minmax_w9n4.max_signed.value a wire
+Making Verilog::DW_minmax_w9n4.max_signed.index a wire
+Making Verilog::DW_minmax_w9n4.max_signed.a_v a wire
+Making Verilog::DW_minmax_w9n4.max_signed.value_v a wire
+Making Verilog::DW_minmax_w9n4.max_signed.index_v a wire
+Type-checking Verilog::DW_minmax_w9n5
+Making Verilog::DW_minmax_w9n5.min_unsigned.a a wire
+Making Verilog::DW_minmax_w9n5.min_unsigned.value a wire
+Making Verilog::DW_minmax_w9n5.min_unsigned.index a wire
+Making Verilog::DW_minmax_w9n5.min_unsigned.a_v a wire
+Making Verilog::DW_minmax_w9n5.min_unsigned.value_v a wire
+Making Verilog::DW_minmax_w9n5.min_unsigned.index_v a wire
+Making Verilog::DW_minmax_w9n5.min_unsigned.a_x a wire
+Making Verilog::DW_minmax_w9n5.min_signed.a a wire
+Making Verilog::DW_minmax_w9n5.min_signed.value a wire
+Making Verilog::DW_minmax_w9n5.min_signed.index a wire
+Making Verilog::DW_minmax_w9n5.min_signed.a_v a wire
+Making Verilog::DW_minmax_w9n5.min_signed.value_v a wire
+Making Verilog::DW_minmax_w9n5.min_signed.index_v a wire
+Making Verilog::DW_minmax_w9n5.min_signed.a_x a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.a a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.value a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.index a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.a_v a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.value_v a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.index_v a wire
+Making Verilog::DW_minmax_w9n5.max_unsigned.a_x a wire
+Making Verilog::DW_minmax_w9n5.max_signed.a a wire
+Making Verilog::DW_minmax_w9n5.max_signed.value a wire
+Making Verilog::DW_minmax_w9n5.max_signed.index a wire
+Making Verilog::DW_minmax_w9n5.max_signed.a_v a wire
+Making Verilog::DW_minmax_w9n5.max_signed.value_v a wire
+Making Verilog::DW_minmax_w9n5.max_signed.index_v a wire
+Making Verilog::DW_minmax_w9n5.max_signed.a_x a wire
+Making Verilog::DW_minmax_w9n5.value a wire
+Making Verilog::DW_minmax_w9n5.index a wire
+Type-checking Verilog::ne_fp_ffp_e_align
+file rtl/ne_fp_ffp_e_align.v line 51: implicit definition of wire Verilog::ne_fp_ffp_e_align.clkg
+Type-checking ne_fp_ffp_e_align
+Mapping variables
+mapping `ne_fp_ffp_e_align.op_mode' to `Verilog::ne_fp_ffp_e_align.op_mode'
+mapping `ne_fp_ffp_e_align.a_e' to `Verilog::ne_fp_ffp_e_align.a_e'
+mapping `ne_fp_ffp_e_align.b_e' to `Verilog::ne_fp_ffp_e_align.b_e'
+mapping `ne_fp_ffp_e_align.e_max' to `Verilog::ne_fp_ffp_e_align.e_max'
+mapping `ne_fp_ffp_e_align.a_e_sub' to `Verilog::ne_fp_ffp_e_align.a_e_sub'
+mapping `ne_fp_ffp_e_align.b_e_sub' to `Verilog::ne_fp_ffp_e_align.b_e_sub'
+mapping `ne_fp_ffp_e_align.a_e_overflow' to `Verilog::ne_fp_ffp_e_align.a_e_overflow'
+mapping `ne_fp_ffp_e_align.b_e_overflow' to `Verilog::ne_fp_ffp_e_align.b_e_overflow'
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 1 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 2 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 3 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 4 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 5 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 6 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 7 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 8 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 9 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 10 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 11 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 12 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 13 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 14 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 15 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.0 iteration 16 file cmodel/ne_fp_ffp_e_align.c line 40 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 1 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 2 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 3 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 4 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 5 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 6 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 7 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 8 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 9 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 10 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 11 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 12 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 13 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 14 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 15 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.1 iteration 16 file cmodel/ne_fp_ffp_e_align.c line 51 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 1 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 2 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 3 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 4 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 5 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 6 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 7 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 8 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 9 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 10 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 11 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 12 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 13 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 14 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.2 iteration 15 file cmodel/ne_fp_ffp_e_align.c line 57 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 1 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 2 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 3 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 4 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 5 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 6 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 7 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 8 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 9 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 10 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 11 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 12 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 13 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 14 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.3 iteration 15 file cmodel/ne_fp_ffp_e_align.c line 65 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 1 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 2 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 3 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 4 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 5 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 6 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 7 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 8 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 9 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 10 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 11 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 12 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 13 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 14 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 15 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.4 iteration 16 file cmodel/ne_fp_ffp_e_align.c line 103 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 1 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 2 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 3 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 4 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 5 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 6 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 7 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 8 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 9 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 10 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 11 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 12 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 13 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 14 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 15 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+Unwinding loop c_ne_fp_ffp_e_align.5 iteration 16 file cmodel/ne_fp_ffp_e_align.c line 132 function c_ne_fp_ffp_e_align thread 0
+size of program expression: 2188 steps
+simple slicing removed 12 assignments
+Generated 5 VCC(s), 5 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::ne_fp_ffp_e_align with 3 time frames
+General constraints
+Initial state
+Transition relation
+Transition 0->1
+Transition 1->2
+Transition 2
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+87692 variables, 239036 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 6.194s
+VERIFICATION SUCCESSFUL
+2025-12-30 22:03:35: Verification completed

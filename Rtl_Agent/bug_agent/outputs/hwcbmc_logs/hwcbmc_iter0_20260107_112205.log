@@ -1,0 +1,897 @@
+HW-CBMC version 5.4
+Parsing cmodel/ne_fp_ffp_add_mwi26.c
+<command-line>: warning: "__STDC_VERSION__" redefined
+<built-in>: note: this is the location of the previous definition
+Parsing rtl/DW01_add_w29.v
+Parsing rtl/ne_fp_ffp_add_mwi26.v
+Converting
+Type-checking Verilog::DW01_add_w29
+Type-checking Verilog::ne_fp_ffp_add_mwi26
+Type-checking ne_fp_ffp_add_mwi26
+Mapping variables
+mapping `ne_fp_ffp_add_mwi26.a' to `Verilog::ne_fp_ffp_add_mwi26.a'
+mapping `ne_fp_ffp_add_mwi26.b' to `Verilog::ne_fp_ffp_add_mwi26.b'
+mapping `ne_fp_ffp_add_mwi26.mode' to `Verilog::ne_fp_ffp_add_mwi26.mode'
+mapping `ne_fp_ffp_add_mwi26.z' to `Verilog::ne_fp_ffp_add_mwi26.z'
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+size of program expression: 381 steps
+simple slicing removed 10 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::ne_fp_ffp_add_mwi26 with 2 time frames
+General constraints
+Initial state
+Transition relation
+Transition 0->1
+Transition 1
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+8467 variables, 13013 clauses
+SAT checker: instance is SATISFIABLE
+Runtime decision procedure: 0.014s
+Building error trace
+
+Counterexample:
+
+State 20 file cmodel/ne_fp_ffp_add_mwi26.c line 231 function main thread 0
+----------------------------------------------------
+  din_a=68652367873 (0000111111111100000000000000000000000001)
+
+State 21 file cmodel/ne_fp_ffp_add_mwi26.c line 232 function main thread 0
+----------------------------------------------------
+  din_b=68652367874 (0000111111111100000000000000000000000010)
+
+State 22 file cmodel/ne_fp_ffp_add_mwi26.c line 233 function main thread 0
+----------------------------------------------------
+  din_mode=1 (001)
+
+State 23 file cmodel/ne_fp_ffp_add_mwi26.c line 235 function main thread 0
+----------------------------------------------------
+  status_a=0 (000)
+
+State 24 file cmodel/ne_fp_ffp_add_mwi26.c line 235 function main thread 0
+----------------------------------------------------
+  status_a=0 (000)
+
+State 25 file cmodel/ne_fp_ffp_add_mwi26.c line 236 function main thread 0
+----------------------------------------------------
+  status_b=0 (000)
+
+State 26 file cmodel/ne_fp_ffp_add_mwi26.c line 236 function main thread 0
+----------------------------------------------------
+  status_b=0 (000)
+
+State 30 file cmodel/ne_fp_ffp_add_mwi26.c line 242 function main thread 0
+----------------------------------------------------
+  ne_fp_ffp_add_mwi26.a=68652367873 (0000111111111100000000000000000000000001)
+
+State 31 file cmodel/ne_fp_ffp_add_mwi26.c line 243 function main thread 0
+----------------------------------------------------
+  ne_fp_ffp_add_mwi26.b=68652367874 (0000111111111100000000000000000000000010)
+
+State 32 file cmodel/ne_fp_ffp_add_mwi26.c line 244 function main thread 0
+----------------------------------------------------
+  ne_fp_ffp_add_mwi26.mode=1 (001)
+
+State 42 file cmodel/ne_fp_ffp_add_mwi26.c line 249 function main thread 0
+----------------------------------------------------
+  c_res=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 45 file cmodel/ne_fp_ffp_add_mwi26.c line 249 function main thread 0
+----------------------------------------------------
+  a=68652367873ul (0000000000000000000000000000111111111100000000000000000000000001)
+
+State 46 file cmodel/ne_fp_ffp_add_mwi26.c line 249 function main thread 0
+----------------------------------------------------
+  b=68652367874ul (0000000000000000000000000000111111111100000000000000000000000010)
+
+State 47 file cmodel/ne_fp_ffp_add_mwi26.c line 249 function main thread 0
+----------------------------------------------------
+  mode=1 (00000001)
+
+State 48 file cmodel/ne_fp_ffp_add_mwi26.c line 48 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_SWI=0 (00000000000000000000000000000000)
+
+State 49 file cmodel/ne_fp_ffp_add_mwi26.c line 48 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_SWI=1 (00000000000000000000000000000001)
+
+State 50 file cmodel/ne_fp_ffp_add_mwi26.c line 49 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_EWI=0 (00000000000000000000000000000000)
+
+State 51 file cmodel/ne_fp_ffp_add_mwi26.c line 49 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_EWI=10 (00000000000000000000000000001010)
+
+State 52 file cmodel/ne_fp_ffp_add_mwi26.c line 50 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_MWI=0 (00000000000000000000000000000000)
+
+State 53 file cmodel/ne_fp_ffp_add_mwi26.c line 50 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_MWI=26 (00000000000000000000000000011010)
+
+State 54 file cmodel/ne_fp_ffp_add_mwi26.c line 51 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BW_STATUS=0 (00000000000000000000000000000000)
+
+State 55 file cmodel/ne_fp_ffp_add_mwi26.c line 51 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BW_STATUS=3 (00000000000000000000000000000011)
+
+State 56 file cmodel/ne_fp_ffp_add_mwi26.c line 52 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_MWO=0 (00000000000000000000000000000000)
+
+State 57 file cmodel/ne_fp_ffp_add_mwi26.c line 52 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_MWO=27 (00000000000000000000000000011011)
+
+State 58 file cmodel/ne_fp_ffp_add_mwi26.c line 53 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BWA=0 (00000000000000000000000000000000)
+
+State 59 file cmodel/ne_fp_ffp_add_mwi26.c line 53 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BWA=40 (00000000000000000000000000101000)
+
+State 60 file cmodel/ne_fp_ffp_add_mwi26.c line 54 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BWZ=0 (00000000000000000000000000000000)
+
+State 61 file cmodel/ne_fp_ffp_add_mwi26.c line 54 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BWZ=41 (00000000000000000000000000101001)
+
+State 62 file cmodel/ne_fp_ffp_add_mwi26.c line 55 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BIAS_I=0 (00000000000000000000000000000000)
+
+State 63 file cmodel/ne_fp_ffp_add_mwi26.c line 55 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BIAS_I=127 (00000000000000000000000001111111)
+
+State 64 file cmodel/ne_fp_ffp_add_mwi26.c line 56 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BIAS_Z=0 (00000000000000000000000000000000)
+
+State 65 file cmodel/ne_fp_ffp_add_mwi26.c line 56 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BIAS_Z=127 (00000000000000000000000001111111)
+
+State 66 file cmodel/ne_fp_ffp_add_mwi26.c line 57 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BIAS_Z_NEG=0 (00000000000000000000000000000000)
+
+State 67 file cmodel/ne_fp_ffp_add_mwi26.c line 57 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BIAS_Z_NEG=-127 (11111111111111111111111110000001)
+
+State 68 file cmodel/ne_fp_ffp_add_mwi26.c line 58 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BW_ESUB=0 (00000000000000000000000000000000)
+
+State 69 file cmodel/ne_fp_ffp_add_mwi26.c line 58 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BW_ESUB=5 (00000000000000000000000000000101)
+
+State 70 file cmodel/ne_fp_ffp_add_mwi26.c line 59 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BW_ADDER=0 (00000000000000000000000000000000)
+
+State 71 file cmodel/ne_fp_ffp_add_mwi26.c line 59 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  P_BW_ADDER=29 (00000000000000000000000000011101)
+
+State 72 file cmodel/ne_fp_ffp_add_mwi26.c line 62 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  offset=0 (00000000000000000000000000000000)
+
+State 73 file cmodel/ne_fp_ffp_add_mwi26.c line 62 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  offset=37 (00000000000000000000000000100101)
+
+State 74 file cmodel/ne_fp_ffp_add_mwi26.c line 65 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_status=0 (00000000)
+
+State 75 file cmodel/ne_fp_ffp_add_mwi26.c line 65 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_status=0 (00000000)
+
+State 76 file cmodel/ne_fp_ffp_add_mwi26.c line 66 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_s=0 (00000000)
+
+State 77 file cmodel/ne_fp_ffp_add_mwi26.c line 66 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_s=0 (00000000)
+
+State 78 file cmodel/ne_fp_ffp_add_mwi26.c line 67 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_e=0 (0000000000000000)
+
+State 79 file cmodel/ne_fp_ffp_add_mwi26.c line 67 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_e=1023 (0000001111111111)
+
+State 80 file cmodel/ne_fp_ffp_add_mwi26.c line 68 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_m=0u (00000000000000000000000000000000)
+
+State 81 file cmodel/ne_fp_ffp_add_mwi26.c line 68 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_m=1u (00000000000000000000000000000001)
+
+State 82 file cmodel/ne_fp_ffp_add_mwi26.c line 70 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_status=0 (00000000)
+
+State 83 file cmodel/ne_fp_ffp_add_mwi26.c line 70 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_status=0 (00000000)
+
+State 84 file cmodel/ne_fp_ffp_add_mwi26.c line 71 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_s=0 (00000000)
+
+State 85 file cmodel/ne_fp_ffp_add_mwi26.c line 71 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_s=0 (00000000)
+
+State 86 file cmodel/ne_fp_ffp_add_mwi26.c line 72 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_e=0 (0000000000000000)
+
+State 87 file cmodel/ne_fp_ffp_add_mwi26.c line 72 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_e=1023 (0000001111111111)
+
+State 88 file cmodel/ne_fp_ffp_add_mwi26.c line 73 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_m=0u (00000000000000000000000000000000)
+
+State 89 file cmodel/ne_fp_ffp_add_mwi26.c line 73 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_m=2u (00000000000000000000000000000010)
+
+State 90 file cmodel/ne_fp_ffp_add_mwi26.c line 76 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_is_nan=FALSE (00000000)
+
+State 91 file cmodel/ne_fp_ffp_add_mwi26.c line 76 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_is_nan=FALSE (00000000)
+
+State 92 file cmodel/ne_fp_ffp_add_mwi26.c line 77 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_is_inf=FALSE (00000000)
+
+State 93 file cmodel/ne_fp_ffp_add_mwi26.c line 77 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_is_inf=FALSE (00000000)
+
+State 94 file cmodel/ne_fp_ffp_add_mwi26.c line 78 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_is_zero=FALSE (00000000)
+
+State 95 file cmodel/ne_fp_ffp_add_mwi26.c line 78 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  a_is_zero=FALSE (00000000)
+
+State 96 file cmodel/ne_fp_ffp_add_mwi26.c line 80 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_is_nan=FALSE (00000000)
+
+State 97 file cmodel/ne_fp_ffp_add_mwi26.c line 80 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_is_nan=FALSE (00000000)
+
+State 98 file cmodel/ne_fp_ffp_add_mwi26.c line 81 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_is_inf=FALSE (00000000)
+
+State 99 file cmodel/ne_fp_ffp_add_mwi26.c line 81 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_is_inf=FALSE (00000000)
+
+State 100 file cmodel/ne_fp_ffp_add_mwi26.c line 82 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_is_zero=FALSE (00000000)
+
+State 101 file cmodel/ne_fp_ffp_add_mwi26.c line 82 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  b_is_zero=FALSE (00000000)
+
+State 102 file cmodel/ne_fp_ffp_add_mwi26.c line 86 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  ae_signed=0 (0000000000000000)
+
+State 106 file cmodel/ne_fp_ffp_add_mwi26.c line 86 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  val=1023ul (0000000000000000000000000000000000000000000000000000001111111111)
+
+State 107 file cmodel/ne_fp_ffp_add_mwi26.c line 86 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  width=10 (00000000000000000000000000001010)
+
+State 113 file cmodel/ne_fp_ffp_add_mwi26.c line 86 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  ae_signed=-1 (1111111111111111)
+
+State 114 file cmodel/ne_fp_ffp_add_mwi26.c line 87 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  be_signed=0 (0000000000000000)
+
+State 118 file cmodel/ne_fp_ffp_add_mwi26.c line 87 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  val=1023ul (0000000000000000000000000000000000000000000000000000001111111111)
+
+State 119 file cmodel/ne_fp_ffp_add_mwi26.c line 87 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  width=10 (00000000000000000000000000001010)
+
+State 125 file cmodel/ne_fp_ffp_add_mwi26.c line 87 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  be_signed=-1 (1111111111111111)
+
+State 126 file cmodel/ne_fp_ffp_add_mwi26.c line 88 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  ae_lt_be=FALSE (00000000)
+
+State 127 file cmodel/ne_fp_ffp_add_mwi26.c line 88 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  ae_lt_be=FALSE (00000000)
+
+State 128 file cmodel/ne_fp_ffp_add_mwi26.c line 91 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_m=0u (00000000000000000000000000000000)
+
+State 129 file cmodel/ne_fp_ffp_add_mwi26.c line 91 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_m=1u (00000000000000000000000000000001)
+
+State 130 file cmodel/ne_fp_ffp_add_mwi26.c line 92 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m=0u (00000000000000000000000000000000)
+
+State 131 file cmodel/ne_fp_ffp_add_mwi26.c line 92 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m=2u (00000000000000000000000000000010)
+
+State 132 file cmodel/ne_fp_ffp_add_mwi26.c line 93 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_e=0 (0000000000000000)
+
+State 133 file cmodel/ne_fp_ffp_add_mwi26.c line 93 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_e=1023 (0000001111111111)
+
+State 134 file cmodel/ne_fp_ffp_add_mwi26.c line 96 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_m_s=0 (00000000)
+
+State 135 file cmodel/ne_fp_ffp_add_mwi26.c line 96 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_m_s=0 (00000000)
+
+State 136 file cmodel/ne_fp_ffp_add_mwi26.c line 97 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_s=0 (00000000)
+
+State 137 file cmodel/ne_fp_ffp_add_mwi26.c line 97 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_s=0 (00000000)
+
+State 138 file cmodel/ne_fp_ffp_add_mwi26.c line 100 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  e_sub=0 (0000000000000000)
+
+State 139 file cmodel/ne_fp_ffp_add_mwi26.c line 100 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  e_sub=0 (0000000000000000)
+
+State 140 file cmodel/ne_fp_ffp_add_mwi26.c line 103 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_overflow=FALSE (00000000)
+
+State 141 file cmodel/ne_fp_ffp_add_mwi26.c line 103 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_overflow=FALSE (00000000)
+
+State 142 file cmodel/ne_fp_ffp_add_mwi26.c line 104 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  e_sub_m=0 (00000000)
+
+State 143 file cmodel/ne_fp_ffp_add_mwi26.c line 104 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  e_sub_m=0 (00000000)
+
+State 144 file cmodel/ne_fp_ffp_add_mwi26.c line 107 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_signed=0 (00000000000000000000000000000000)
+
+State 148 file cmodel/ne_fp_ffp_add_mwi26.c line 107 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  val=2ul (0000000000000000000000000000000000000000000000000000000000000010)
+
+State 149 file cmodel/ne_fp_ffp_add_mwi26.c line 107 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  width=26 (00000000000000000000000000011010)
+
+State 154 file cmodel/ne_fp_ffp_add_mwi26.c line 107 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_signed=2 (00000000000000000000000000000010)
+
+State 155 file cmodel/ne_fp_ffp_add_mwi26.c line 108 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_shifted=0 (00000000000000000000000000000000)
+
+State 156 file cmodel/ne_fp_ffp_add_mwi26.c line 108 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_shifted=2 (00000000000000000000000000000010)
+
+State 157 file cmodel/ne_fp_ffp_add_mwi26.c line 109 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_align0=0u (00000000000000000000000000000000)
+
+State 158 file cmodel/ne_fp_ffp_add_mwi26.c line 109 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_align0=2u (00000000000000000000000000000010)
+
+State 159 file cmodel/ne_fp_ffp_add_mwi26.c line 112 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_align=0u (00000000000000000000000000000000)
+
+State 161 file cmodel/ne_fp_ffp_add_mwi26.c line 119 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_m_align=2u (00000000000000000000000000000010)
+
+State 162 file cmodel/ne_fp_ffp_add_mwi26.c line 123 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_mask0=0u (00000000000000000000000000000000)
+
+State 163 file cmodel/ne_fp_ffp_add_mwi26.c line 123 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_mask0=67108863u (00000011111111111111111111111111)
+
+State 164 file cmodel/ne_fp_ffp_add_mwi26.c line 124 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_mask=0u (00000000000000000000000000000000)
+
+State 165 file cmodel/ne_fp_ffp_add_mwi26.c line 124 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_mask=0u (00000000000000000000000000000000)
+
+State 166 file cmodel/ne_fp_ffp_add_mwi26.c line 125 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_norm_bits=0u (00000000000000000000000000000000)
+
+State 167 file cmodel/ne_fp_ffp_add_mwi26.c line 125 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_norm_bits=0u (00000000000000000000000000000000)
+
+State 168 file cmodel/ne_fp_ffp_add_mwi26.c line 126 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_norm_bit=FALSE (00000000)
+
+State 169 file cmodel/ne_fp_ffp_add_mwi26.c line 126 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  align_norm_bit=FALSE (00000000)
+
+State 170 file cmodel/ne_fp_ffp_add_mwi26.c line 131 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_significant=0u (00000000000000000000000000000000)
+
+State 171 file cmodel/ne_fp_ffp_add_mwi26.c line 131 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  large_significant=4u (00000000000000000000000000000100)
+
+State 172 file cmodel/ne_fp_ffp_add_mwi26.c line 135 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_significant_raw=0u (00000000000000000000000000000000)
+
+State 173 file cmodel/ne_fp_ffp_add_mwi26.c line 135 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_significant_raw=8u (00000000000000000000000000001000)
+
+State 174 file cmodel/ne_fp_ffp_add_mwi26.c line 140 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_significant=0u (00000000000000000000000000000000)
+
+State 175 file cmodel/ne_fp_ffp_add_mwi26.c line 140 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  small_significant=8u (00000000000000000000000000001000)
+
+State 176 file cmodel/ne_fp_ffp_add_mwi26.c line 143 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_a_t=0u (00000000000000000000000000000000)
+
+State 177 file cmodel/ne_fp_ffp_add_mwi26.c line 143 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_a_t=4u (00000000000000000000000000000100)
+
+State 178 file cmodel/ne_fp_ffp_add_mwi26.c line 144 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_b_t=0u (00000000000000000000000000000000)
+
+State 179 file cmodel/ne_fp_ffp_add_mwi26.c line 144 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_b_t=8u (00000000000000000000000000001000)
+
+State 180 file cmodel/ne_fp_ffp_add_mwi26.c line 147 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_z=0u (00000000000000000000000000000000)
+
+State 183 file cmodel/ne_fp_ffp_add_mwi26.c line 147 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_a=4u (00000000000000000000000000000100)
+
+State 184 file cmodel/ne_fp_ffp_add_mwi26.c line 147 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_b=8u (00000000000000000000000000001000)
+
+State 187 file cmodel/ne_fp_ffp_add_mwi26.c line 147 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  adder_z=12u (00000000000000000000000000001100)
+
+State 188 file cmodel/ne_fp_ffp_add_mwi26.c line 152 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_m=0u (00000000000000000000000000000000)
+
+State 189 file cmodel/ne_fp_ffp_add_mwi26.c line 152 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_m=3u (00000000000000000000000000000011)
+
+State 190 file cmodel/ne_fp_ffp_add_mwi26.c line 155 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_inf_nan_t=FALSE (00000000)
+
+State 191 file cmodel/ne_fp_ffp_add_mwi26.c line 155 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_inf_nan_t=FALSE (00000000)
+
+State 192 file cmodel/ne_fp_ffp_add_mwi26.c line 156 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_nan_t=FALSE (00000000)
+
+State 193 file cmodel/ne_fp_ffp_add_mwi26.c line 156 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_nan_t=FALSE (00000000)
+
+State 194 file cmodel/ne_fp_ffp_add_mwi26.c line 157 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_inf_t=FALSE (00000000)
+
+State 195 file cmodel/ne_fp_ffp_add_mwi26.c line 157 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_inf_t=FALSE (00000000)
+
+State 196 file cmodel/ne_fp_ffp_add_mwi26.c line 159 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_zero_t=FALSE (00000000)
+
+State 197 file cmodel/ne_fp_ffp_add_mwi26.c line 159 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_zero_t=FALSE (00000000)
+
+State 198 file cmodel/ne_fp_ffp_add_mwi26.c line 160 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_zero=FALSE (00000000)
+
+State 199 file cmodel/ne_fp_ffp_add_mwi26.c line 160 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_is_zero=FALSE (00000000)
+
+State 200 file cmodel/ne_fp_ffp_add_mwi26.c line 163 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_e_t=0 (0000000000000000)
+
+State 201 file cmodel/ne_fp_ffp_add_mwi26.c line 163 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_e_t=0 (0000000000000000)
+
+State 202 file cmodel/ne_fp_ffp_add_mwi26.c line 166 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s_zero=0 (00000000)
+
+State 203 file cmodel/ne_fp_ffp_add_mwi26.c line 166 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s_zero=0 (00000000)
+
+State 204 file cmodel/ne_fp_ffp_add_mwi26.c line 167 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s=0 (00000000)
+
+State 205 file cmodel/ne_fp_ffp_add_mwi26.c line 167 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s=0 (00000000)
+
+State 206 file cmodel/ne_fp_ffp_add_mwi26.c line 169 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s_inf=0 (00000000)
+
+State 207 file cmodel/ne_fp_ffp_add_mwi26.c line 169 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s_inf=0 (00000000)
+
+State 208 file cmodel/ne_fp_ffp_add_mwi26.c line 170 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s_nan=0 (00000000)
+
+State 209 file cmodel/ne_fp_ffp_add_mwi26.c line 170 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_s_nan=1 (00000001)
+
+State 210 file cmodel/ne_fp_ffp_add_mwi26.c line 175 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_e_max=0 (0000000000000000)
+
+State 211 file cmodel/ne_fp_ffp_add_mwi26.c line 175 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_e_max=128 (0000000010000000)
+
+State 212 file cmodel/ne_fp_ffp_add_mwi26.c line 179 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_e_zero_val=0 (0000000000000000)
+
+State 213 file cmodel/ne_fp_ffp_add_mwi26.c line 179 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_e_zero_val=129 (0000000010000001)
+
+State 214 file cmodel/ne_fp_ffp_add_mwi26.c line 182 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_d=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 215 file cmodel/ne_fp_ffp_add_mwi26.c line 182 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_d=3ul (0000000000000000000000000000000000000000000000000000000000000011)
+
+State 216 file cmodel/ne_fp_ffp_add_mwi26.c line 185 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  nan_payload=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 217 file cmodel/ne_fp_ffp_add_mwi26.c line 185 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  nan_payload=117440512ul (0000000000000000000000000000000000000111000000000000000000000000)
+
+State 218 file cmodel/ne_fp_ffp_add_mwi26.c line 188 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_nan=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 219 file cmodel/ne_fp_ffp_add_mwi26.c line 188 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_nan=154736263168ul (0000000000000000000000000010010000000111000000000000000000000000)
+
+State 220 file cmodel/ne_fp_ffp_add_mwi26.c line 193 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  inf_payload=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 221 file cmodel/ne_fp_ffp_add_mwi26.c line 193 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  inf_payload=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 222 file cmodel/ne_fp_ffp_add_mwi26.c line 195 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_inf=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 223 file cmodel/ne_fp_ffp_add_mwi26.c line 195 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_inf=17179869184ul (0000000000000000000000000000010000000000000000000000000000000000)
+
+State 224 file cmodel/ne_fp_ffp_add_mwi26.c line 200 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  zero_payload=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 225 file cmodel/ne_fp_ffp_add_mwi26.c line 200 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  zero_payload=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 226 file cmodel/ne_fp_ffp_add_mwi26.c line 202 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_zero=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 227 file cmodel/ne_fp_ffp_add_mwi26.c line 202 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_zero=17314086912ul (0000000000000000000000000000010000001000000000000000000000000000)
+
+State 228 file cmodel/ne_fp_ffp_add_mwi26.c line 207 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_o=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 232 file cmodel/ne_fp_ffp_add_mwi26.c line 215 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  z_o=3ul (0000000000000000000000000000000000000000000000000000000000000011)
+
+State 233 file cmodel/ne_fp_ffp_add_mwi26.c line 218 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  final_z=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 234 file cmodel/ne_fp_ffp_add_mwi26.c line 218 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  final_z=3ul (0000000000000000000000000000000000000000000000000000000000000011)
+
+State 236 file cmodel/ne_fp_ffp_add_mwi26.c line 221 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  status=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 237 file cmodel/ne_fp_ffp_add_mwi26.c line 221 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  status=0ul (0000000000000000000000000000000000000000000000000000000000000000)
+
+State 238 file cmodel/ne_fp_ffp_add_mwi26.c line 222 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  core_width=0 (00000000000000000000000000000000)
+
+State 239 file cmodel/ne_fp_ffp_add_mwi26.c line 222 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  core_width=38 (00000000000000000000000000100110)
+
+State 240 file cmodel/ne_fp_ffp_add_mwi26.c line 223 function c_ne_fp_ffp_add_mwi26 thread 0
+----------------------------------------------------
+  final_z=3ul (0000000000000000000000000000000000000000000000000000000000000011)
+
+State 244 file cmodel/ne_fp_ffp_add_mwi26.c line 249 function main thread 0
+----------------------------------------------------
+  c_res=3ul (0000000000000000000000000000000000000000000000000000000000000011)
+
+Violated property:
+  file cmodel/ne_fp_ffp_add_mwi26.c line 250 function main
+  assertion ne_fp_ffp_add_mwi26.z == (_u41)c_res
+  ne_fp_ffp_add_mwi26.z == (unsigned __CPROVER_bitvector[41])c_res
+
+Transition system state 0
+----------------------------------------------------
+  Verilog::ne_fp_ffp_add_mwi26.SWI = ?
+  Verilog::ne_fp_ffp_add_mwi26.EWI = ?
+  Verilog::ne_fp_ffp_add_mwi26.MWI = ?
+  Verilog::ne_fp_ffp_add_mwi26.HAVE_INT = ?
+  Verilog::ne_fp_ffp_add_mwi26.INT_CH = ?
+  Verilog::ne_fp_ffp_add_mwi26.BW_INT_I = ?
+  Verilog::ne_fp_ffp_add_mwi26.BW_STATUS = ?
+  Verilog::ne_fp_ffp_add_mwi26.PIPE = ?
+  Verilog::ne_fp_ffp_add_mwi26.SWO = ?
+  Verilog::ne_fp_ffp_add_mwi26.EWO = ?
+  Verilog::ne_fp_ffp_add_mwi26.MWO = ?
+  Verilog::ne_fp_ffp_add_mwi26.BWA = ?
+  Verilog::ne_fp_ffp_add_mwi26.BWZ = ?
+  Verilog::ne_fp_ffp_add_mwi26.BW_INT_O = ?
+  Verilog::ne_fp_ffp_add_mwi26.VAL_A_TEMP = ?
+  Verilog::ne_fp_ffp_add_mwi26.VAL_B_TEMP = ?
+  Verilog::ne_fp_ffp_add_mwi26.BW_ADDER = ?
+  Verilog::ne_fp_ffp_add_mwi26.BIAS_I = ?
+  Verilog::ne_fp_ffp_add_mwi26.BIAS_Z = ?
+  Verilog::ne_fp_ffp_add_mwi26.BIAS_Z_NEG = ?
+  Verilog::ne_fp_ffp_add_mwi26.BW_ESUB = ?
+  Verilog::ne_fp_ffp_add_mwi26.clk = ?
+  Verilog::ne_fp_ffp_add_mwi26.a = 'hFFC000001
+  Verilog::ne_fp_ffp_add_mwi26.b = 'hFFC000002
+  Verilog::ne_fp_ffp_add_mwi26.z = 'h1C401000000
+  Verilog::ne_fp_ffp_add_mwi26.mode = 3'b1 (001)
+  Verilog::ne_fp_ffp_add_mwi26.a_s = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_s = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_e = 'h3FF (1111111111)
+  Verilog::ne_fp_ffp_add_mwi26.b_e = 'h3FF (1111111111)
+  Verilog::ne_fp_ffp_add_mwi26.a_m = 1 (00000000000000000000000001)
+  Verilog::ne_fp_ffp_add_mwi26.b_m = 2 (00000000000000000000000010)
+  Verilog::ne_fp_ffp_add_mwi26.z_status = 3'b111 (111)
+  Verilog::ne_fp_ffp_add_mwi26.a_status = 3'b0 (000)
+  Verilog::ne_fp_ffp_add_mwi26.b_status = 3'b0 (000)
+  Verilog::ne_fp_ffp_add_mwi26.a_is_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_is_inf = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_is_nan = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_is_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_is_inf = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_is_nan = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_e_is_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_e_is_max = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_m_is_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_e_is_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_e_is_max = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_m_is_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_is_zero_without = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_is_inf_without = 0
+  Verilog::ne_fp_ffp_add_mwi26.a_is_nan_without = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_is_zero_without = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_is_inf_without = 0
+  Verilog::ne_fp_ffp_add_mwi26.b_is_nan_without = 0
+  Verilog::ne_fp_ffp_add_mwi26.ae_lt_be = 0
+  Verilog::ne_fp_ffp_add_mwi26.large_m = 1 (00000000000000000000000001)
+  Verilog::ne_fp_ffp_add_mwi26.small_m = 2 (00000000000000000000000010)
+  Verilog::ne_fp_ffp_add_mwi26.large_e = 'h3FF (1111111111)
+  Verilog::ne_fp_ffp_add_mwi26.small_e = 'h3FF (1111111111)
+  Verilog::ne_fp_ffp_add_mwi26.large_m_s = 0
+  Verilog::ne_fp_ffp_add_mwi26.small_m_s = 0
+  Verilog::ne_fp_ffp_add_mwi26.e_sub_t = 0 (00000000000)
+  Verilog::ne_fp_ffp_add_mwi26.e_sub = 0 (0000000000)
+  Verilog::ne_fp_ffp_add_mwi26.e_sub_m = 5'b0 (00000)
+  Verilog::ne_fp_ffp_add_mwi26.align_overflow = 0
+  Verilog::ne_fp_ffp_add_mwi26.small_m_align0 = 2 (00000000000000000000000010)
+  Verilog::ne_fp_ffp_add_mwi26.small_m_align = 2 (00000000000000000000000010)
+  Verilog::ne_fp_ffp_add_mwi26.align_mask0 = 'h3FFFFFF (11111111111111111111111111)
+  Verilog::ne_fp_ffp_add_mwi26.align_mask = 0 (00000000000000000000000000)
+  Verilog::ne_fp_ffp_add_mwi26.align_norm_bits = 0 (00000000000000000000000000)
+  Verilog::ne_fp_ffp_add_mwi26.align_norm_bit = 0
+  Verilog::ne_fp_ffp_add_mwi26.large_significant = 4 (00000000000000000000000000100)
+  Verilog::ne_fp_ffp_add_mwi26.small_significant = 8 (00000000000000000000000001000)
+  Verilog::ne_fp_ffp_add_mwi26.z_e = 'h381 (1110000001)
+  Verilog::ne_fp_ffp_add_mwi26.z_m = 'h2000008 (010000000000000000000001000)
+  Verilog::ne_fp_ffp_add_mwi26.z_e0_tt = 0 (00000000000)
+  Verilog::ne_fp_ffp_add_mwi26.z_e0_t = 0 (0000000000)
+  Verilog::ne_fp_ffp_add_mwi26.z_e_t = 0 (0000000000)
+  Verilog::ne_fp_ffp_add_mwi26.z_s = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_zero = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_zero_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_inf_nan_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_is_zero_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_is_inf_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_is_nan_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_inf_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_nan_t = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_e_overflow1 = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_e_overflow1_t = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_is_zero = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_is_zero1 = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_is_inf = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_is_nan = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_inf_nan = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_inf = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_nan = 0
+  Verilog::ne_fp_ffp_add_mwi26.e_overflow_pos = 0
+  Verilog::ne_fp_ffp_add_mwi26.e_overflow_neg = 0
+  Verilog::ne_fp_ffp_add_mwi26.int_a0 = ?
+  Verilog::ne_fp_ffp_add_mwi26.int_b0 = ?
+  Verilog::ne_fp_ffp_add_mwi26.int_a1 = ?
+  Verilog::ne_fp_ffp_add_mwi26.int_b1 = ?
+  Verilog::ne_fp_ffp_add_mwi26.int_z0 = ?
+  Verilog::ne_fp_ffp_add_mwi26.int_z1 = ?
+  Verilog::ne_fp_ffp_add_mwi26.adder_a = 'h4000011 (00100000000000000000000010001)
+  Verilog::ne_fp_ffp_add_mwi26.adder_b = 'h4000011 (00100000000000000000000010001)
+  Verilog::ne_fp_ffp_add_mwi26.adder_z = 'h8000022 (01000000000000000000000100010)
+  Verilog::ne_fp_ffp_add_mwi26.adder_a_t = 4 (00000000000000000000000000100)
+  Verilog::ne_fp_ffp_add_mwi26.adder_b_t = 8 (00000000000000000000000001000)
+  Verilog::ne_fp_ffp_add_mwi26.z_zero = 'h1C08000000
+  Verilog::ne_fp_ffp_add_mwi26.z_inf = 'h400000000
+  Verilog::ne_fp_ffp_add_mwi26.z_nan = 'h401000000
+  Verilog::ne_fp_ffp_add_mwi26.z_d = 'h1C0A000008
+  Verilog::ne_fp_ffp_add_mwi26.z_o = 'h401000000
+  Verilog::ne_fp_ffp_add_mwi26.mode_o = 3'b0 (000)
+  Verilog::ne_fp_ffp_add_mwi26.adder_a_1r = 'h4000011 (00100000000000000000000010001)
+  Verilog::ne_fp_ffp_add_mwi26.adder_b_1r = ?
+  Verilog::ne_fp_ffp_add_mwi26.z_s_zero_1r = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_e_overflow1_1r = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_e_1r = 'h381 (1110000001)
+  Verilog::ne_fp_ffp_add_mwi26.z_inf_nan_1r = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_is_zero_1r = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_is_inf_1r = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_is_nan_1r = 1
+  Verilog::ne_fp_ffp_add_mwi26.z_s_inf_1r = 0
+  Verilog::ne_fp_ffp_add_mwi26.z_s_nan_1r = 0
+  Verilog::ne_fp_ffp_add_mwi26.mode_1r = 3'b0 (000)
+  Verilog::ne_fp_ffp_add_mwi26.a_status_padded = 3'b0 (000)
+  Verilog::ne_fp_ffp_add_mwi26.b_status_padded = 3'b0 (000)
+  Verilog::ne_fp_ffp_add_mwi26.z_e_max = 128 (0010000000)
+  Verilog::ne_fp_ffp_add_mwi26.z_e_zero = -127 (1110000001)
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.width = ?
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.A = 'h4000011 (00100000000000000000000010001)
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.B = 'h4000011 (00100000000000000000000010001)
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.CI = 0
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.SUM = 'h8000022 (01000000000000000000000100010)
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.CO = 0
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.tmp_out = 'h8000022 (001000000000000000000000100010)
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.parameter_check = ?
+  Verilog::ne_fp_ffp_add_mwi26.u_adder.parameter_check.param_err_flg = ?
+
+VERIFICATION FAILED
+Log saved to: verfication_add_mwi26_20260107_112205.log
