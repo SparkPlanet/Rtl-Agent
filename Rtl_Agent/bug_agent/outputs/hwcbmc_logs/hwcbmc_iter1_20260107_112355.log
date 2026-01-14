@@ -1,9 +1,0 @@
-HW-CBMC version 5.4
-Parsing cmodel/ne_fp_ffp_add_mwi26.c
-<command-line>: warning: "__STDC_VERSION__" redefined
-<built-in>: note: this is the location of the previous definition
-Parsing rtl/DW01_add_w29.v
-Parsing rtl/ne_fp_ffp_add_mwi26.v
-unknown preprocessor directive ""
-PARSING ERROR
-Log saved to: verfication_add_mwi26_20260107_112355.log
